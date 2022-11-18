@@ -1,3 +1,8 @@
+::Script Name: powershell.ps1
+::Author: Eric Santos
+::Date of last Revision: 11/17/2022
+::Purpose: Display Events
+
 ::Output all events from the System event log that occurred in the last 24 hours to a file on your desktop named last_24.txt.
 Get-EventLog -LogName System -After (Get-Date).AddDays(-1) > C:\Users\Eric\Desktop\last_24.txt
 
