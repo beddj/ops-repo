@@ -22,7 +22,7 @@ Start-Process iexplore.exe:https://owasp.org/www-project-top-ten/
 
 
 #Start the process Internet Explorer (iexplore.exe) ten times using a for loop. Have each instance open https://owasp.org/www-project-top-ten/
-foreach($i in 1..10){
+foreach($i in 1..20){
 #Start-Process iexplore.exe:https://owasp.org/www-project-top-ten/
 
 }
