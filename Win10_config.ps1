@@ -1,4 +1,4 @@
-﻿#Script Name: Win_setup.ps1
+﻿#Script Name: Win10_config.ps1
 #Author: Eric Santos
 #Date of last Revision: 11/21/2022
 #Purpose: Automate a Windows 10 configuration
