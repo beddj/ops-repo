@@ -2,6 +2,7 @@
 #Author: Eric Santos
 #Date of last Revision: 11/21/2022
 #Purpose: Automate a Windows 10 configuration
+# The code in this script was obtained from https://github.com/superswan/Powershell-SysAdmin
 
 #Enable File and Printer Sharing
 Set-NetFirewallRule -DisplayGroup "File And Printer Sharing" -Enabled True
