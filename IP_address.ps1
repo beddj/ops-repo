@@ -5,5 +5,5 @@
 # Purpose: Displays IP address
 
 ipconfig /all > network_report.txt
-Select-String network_report.txt -Pattern "\d{1,3}(\.\d{1,3}){3}" -Exclude " IPv4 Address. . . . . . . . . . . : 1"| select-object -first 1 
+Select-String network_report.txt -Pattern "\d{1,3}(\.\d{1,3}){3}" | select-object -first 1 
 del network_report.txt
