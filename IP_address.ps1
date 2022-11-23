@@ -4,13 +4,13 @@
 # Date of last Revision: 11/22/2022
 # Purpose: Displays IP address
 
-ipconfig /all > network_report.txt
-$random = "Random Variable"
+$report = "network_report.txt"
+ipconfig /all > $report
 
 Function IPaddy {
 
-Select-String network_report.txt -Pattern "\d{1,3}(\.\d{1,3}){3}" | select-object -first 1 
+select-string $report -Pattern "\d{1,3}(\.\d{1,3}){3}" | select-object -first 1 
 }
 
 IPaddy
-del network_report.txt
+del $report
