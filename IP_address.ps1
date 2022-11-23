@@ -5,5 +5,13 @@
 # Purpose: Displays IP address
 
 ipconfig /all > network_report.txt
+
+
+
+Function IPaddy {
+
 Select-String network_report.txt -Pattern "\d{1,3}(\.\d{1,3}){3}" | select-object -first 1 
+}
+
+IPaddy
 del network_report.txt
