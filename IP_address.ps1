@@ -5,8 +5,7 @@
 # Purpose: Displays IP address
 
 ipconfig /all > network_report.txt
-
-
+$random = "Random Variable"
 
 Function IPaddy {
 
